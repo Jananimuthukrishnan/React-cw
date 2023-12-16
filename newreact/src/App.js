@@ -57,17 +57,91 @@ export default function App() {
     </div>
   )
 }*/
-import Funcom from "./Component/Funcom.js";
+
+
+
+
+
+
+
+
+/*import List from "./Day6/List";
+import Listprops from "./Day6/Listprops";
+import Multilist from "./Day6/Multilist";*/
+
+/*import BRouter from "./Day 5/BRouter";
+import Router from "./Day 5/Router";
+import {BrowserRouter,Routes,Route} from "react-router-dom";*/
+
+
+/*import Funcom from "./Component/Funcom.js";
 import Classcom from "./Component/Classcom.js";
 import OneExport from "./Component/OneExport.js";
- export default function App()
+export default function App()
+{
+  return(
+    <div>
+    <Funcom/>
+    <Classcom/>
+    <OneExport/>
+    </div>
+    )
+  }*/
+  /*import ArrowProps from "./Day4/ArrowProps";
+  import Countfunc from "./Day4/Countfunc";
+  import DefaultProps from "./Day4/DefaultProps";
+  import Dynamicrend from "./Day4/Dynamicrend";
+  import Parent from "./Day4/ParentChild";
+  import Props from "./Day4/Props";
+  import Propscls from "./Day4/Propscls";
+  import Propsnot from "./Day4/Propsnot";
+  import StateHoldObj from "./Day4/StateHoldObj";
+  import Stateclscom from "./Day4/Stateclscom";
+  import Twowaybind from "./Day4/Twowaybind";
+  
+  export default function App()
   {
     return(
       <div>
-        <Funcom/>
-        <Classcom/>
-        <OneExport/>
-      </div>
-    )
-  }
+      <Props name="jankrshn"></Props>
+      <Propscls college="Skct"></Propscls>
+      <Propsnot place="cbe" state="Tamil Nadu"></Propsnot>
+      <ArrowProps country="India"></ArrowProps>
+      <Stateclscom/>
+      <Countfunc/>
+      <StateHoldObj/>
+      <Parent/>
+      <Dynamicrend/>
+      <Twowaybind/>
+      <DefaultProps name="vivek"/>
+        <MaterialUI/>
+          <List/>
+          <Listprops/>
+          <Multilist/>
+          <TryCatch fruit="onion"></TryCatch>
+          <ErrorBoundary>
+            <Hero Heroname="Joker"></Hero>
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Hero Heroname="ABC"></Hero>
+          </ErrorBoundary>
+          </div>
+          )
+    }
+    /*<BrowserRouter>
+    <Routes>
+    <Route path='/login' element={<BRouter/>} ></Route>
+    <Route path='/signup' element={<Router/>} ></Route>
+    </Routes>
+    </BrowserRouter>*/
+    
+import LifecycleFunctional from "./Day 8/LifeCycleFunction";
+export default function App()
+{
+      return(
+        <div>
+      <LifecycleFunctional></LifecycleFunctional>
+    </div>
+  )
+}
 
