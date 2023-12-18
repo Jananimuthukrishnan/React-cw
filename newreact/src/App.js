@@ -114,34 +114,50 @@ export default function App()
       <Dynamicrend/>
       <Twowaybind/>
       <DefaultProps name="vivek"/>
-        <MaterialUI/>
-          <List/>
-          <Listprops/>
-          <Multilist/>
-          <TryCatch fruit="onion"></TryCatch>
-          <ErrorBoundary>
-            <Hero Heroname="Joker"></Hero>
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Hero Heroname="ABC"></Hero>
-          </ErrorBoundary>
-          </div>
-          )
+      <List/>
+      <Listprops/>
+      <Multilist/>
+      <TryCatch fruit="onion"></TryCatch>
+      <ErrorBoundary>
+      <Hero Heroname="Joker"></Hero>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero Heroname="ABC"></Hero>
+      </ErrorBoundary>
+      </div>
+      )
     }
     /*<BrowserRouter>
     <Routes>
     <Route path='/login' element={<BRouter/>} ></Route>
     <Route path='/signup' element={<Router/>} ></Route>
+    <LifecycleFunctional></LifecycleFunctional>
     </Routes>
     </BrowserRouter>*/
     
-import LifecycleFunctional from "./Day 8/LifeCycleFunction";
-export default function App()
-{
+/*import LoginForm from "./Day 9/LoginForm"
+    export default function App()
+    {
       return(
         <div>
-      <LifecycleFunctional></LifecycleFunctional>
+          <LoginForm />
     </div>
   )
-}
+}*/
+import React from 'react';
+import WithLoading from './Day 9/WithLoading';
+import MyComponent from './Day 9/MyComponent';
+
+const WrappedComponentWithLoading = WithLoading(MyComponent);
+
+const App = () => {
+  return (
+    <div>
+      
+      <WrappedComponentWithLoading />
+    </div>
+  );
+};
+
+export default App;
 
