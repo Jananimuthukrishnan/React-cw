@@ -144,17 +144,24 @@ export default function App()
     </div>
   )
 }*/
-import React from 'react';
-import WithLoading from './Day 9/WithLoading';
+import React from 'react'
+
+import PostAxios from './Day 11/PostAxios';
+import GetAxios from './Day 11/GetAxios';
+import PutAxios from './Day 11/PutAxios';
+import DeleteAxios from './Day 11/DeleteAxios';
+/*import WithLoading from './Day 9/WithLoading';
 import MyComponent from './Day 9/MyComponent';
 
 const WrappedComponentWithLoading = WithLoading(MyComponent);
 
-const App = () => {
+const App = () => */function App(){
   return (
     <div>
-      
-      <WrappedComponentWithLoading />
+      <GetAxios/>
+      <PostAxios/>
+      <PutAxios/>
+      <DeleteAxios/>
     </div>
   );
 };
